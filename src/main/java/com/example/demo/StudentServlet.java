@@ -16,7 +16,7 @@ public class StudentServlet extends HttpServlet {
 
     @Override
     public void init() {
-        studentDAO = new StudentDAO(); // Initialize StudentDAO
+        studentDAO = new StudentDAO();
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
