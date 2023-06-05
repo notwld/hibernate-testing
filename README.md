@@ -1,5 +1,5 @@
-# hibernate-testing
-A simple Jakarta app built with Hibernate as an ORM.
+# Hibernate-Testing
+A simple Jakarta EE app built with Hibernate as an ORM.
 
 # Getting Started
 
@@ -10,12 +10,12 @@ Before running this application, make sure you have the following installed:
 - MySQL Database
 - GlassFish 6.2.5 (Application Server)
 
-Clone the repository: 
+## Clone the repository: 
 ```shell
 git clone https://github.com/notwld/hibernate-testing
  ```
  
-Dependencies:
+## Dependencies:
 ```shell
 <dependency>
       <groupId>org.hibernate.orm</groupId>
@@ -38,11 +38,11 @@ Dependencies:
 </dependency>
 ```
 
-Configure the database:
+## Configure the database:
 
 Create a MySQL database with the name student.
 Update the database connection details in the src/main/resources/hibernate.cfg.xml file.
  
-Access the application:
+## Access the application:
 
 Run you application and it will automatically open http://localhost:8080 to access the Student App.
