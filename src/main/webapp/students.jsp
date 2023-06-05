@@ -3,24 +3,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Student List</title>
 </head>
 <body>
-<h1>Student List</h1>
+<h1 class="text-xg">Student List</h1>
 
-<table>
+<table class="table-auto w-80 mx-auto mx-4 my-4">
+    <thead>
     <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Department</th>
+        <th class="text-left px-4 py-2">ID</th>
+        <th class="text-left px-4 py-2">Name</th>
+        <th class="text-left px-4 py-2">Department</th>
     </tr>
+    </thead>
+    <tbody>
     <c:forEach items="${students}" var="student">
         <tr>
-            <td>${student.id}</td>
-            <td>${student.name}</td>
-            <td>${student.department}</td>
+            <td class="border px-4 py-2 text-left">${student.id}</td>
+            <td class="border px-4 py-2 text-left">${student.name}</td>
+            <td class="border px-4 py-2 text-left">${student.department}</td>
         </tr>
     </c:forEach>
+    </tbody>
 </table>
+
+
+
 </body>
 </html>
